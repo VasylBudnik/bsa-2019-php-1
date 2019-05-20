@@ -8,6 +8,15 @@ use App\Task1\Fighter;
 
 $arena = new FightArena();
 $presenter = new FightArenaHtmlPresenter();
+
+$fighter1  = new Fighter(1, 'Ryu', 100, 10, 'https://bit.ly/2E5Pouh');
+$fighter2  = new Fighter(2, 'Chun-Li', 90, 20, 'https://bit.ly/2Vie3lf');
+$fighter3  = new Fighter(3, 'Ken Masters', 80, 30, 'https://bit.ly/2VZ2tQd');
+
+$arena->add($fighter1);
+$arena->add($fighter2);
+$arena->add($fighter3);
+
 $presentation = $presenter->present($arena);
 
 ?>
