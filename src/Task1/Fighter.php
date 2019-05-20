@@ -6,28 +6,44 @@ namespace App\Task1;
 
 class Fighter
 {
+
+    public $ID;
+    public $name;
+    public $health;
+    public $attack;
+    public $image;
+
+    public function __construct(int $ID, string $name, int $health, int $attack, string $image)
+    {
+        $this->ID = $ID;
+        $this->name =$name;
+        $this->health = $health;
+        $this->attack = $attack;
+        $this->image = $image;
+    }
+
     public function getId(): int
     {
-        // @todo
+        return $this->ID;
     }
 
     public function getName(): string
     {
-        // @todo
+        $this->name;
     }
 
     public function getHealth(): int
     {
-        // @todo
+        $this->health;
     }
 
     public function getAttack(): int
     {
-        // @todo
+        $this->attack;
     }
 
     public function getImage(): string
     {
-        // @todo
+        return $this->image;
     }
 }
